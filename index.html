@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Mentoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>AVALIE A SUA MENTORIA</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img src="./img1.svg" alt="Desenho de um balão de diálogo com 5 estrelas">
+    </div>
+    <div class="personals-info">
+      <h2>INFORMAÇÕES PESSOAIS</h2>
+    </div>
+  </header>
+  <form>
+    <fieldset>
+      <div class="input-group">
+        <div class="name">
+          <label for="nome">Nome</label>
+          <input name="nome" type="text" />
+        </div>
+        <div class="last-name">
+          <label for="last-name">Sobrenome</label>
+          <input name="last-name" type="text" />
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <label for="email">Email <span>(digite um email válido)</span></label>
+        <input name="email" type="email">
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="fieldset-wrapper">
+        INFORMAÇÕES DO MENTOR
+      </div>
+      <div class="input-wrapper">
+        <label for="mentor">Selecione quem foi o seu mentor</label>
+        <select name="mentor">
+          <option value=""></option>
+          <option value="jose">Jose</option>
+          <option value="maria">Maria</option>
+          <option value="sebastiana">Sebastiana</option>
+        </select>
+        <label for="feedback">Feedback sobre o mentor</label>
+        <textarea name="feedback"></textarea>
+        <div class="dobts">
+          <input for="dobts" type="checkbox">
+          <label for="dobts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="fieldset-wrapper">
+        AGENDANDO PRÓXIMA MENTORIA
+      </div>
+      <div class="input-group-date">
+        <div class="date">
+          <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+          <input name="date" type="date">
+        </div>
+        <div class="time-bg">
+          <label for="time-bg">Das</label>
+          <input name="time-bg" type="time">
+        </div>
+        <div class="time-end">
+          <label for="time-end">Até</label>
+          <input name="time-end" type="time">
+        </div>  
+      </div>
+    </fieldset>
+    <button>
+      SALVAR
+    </button>
+  </form>
+  
+</body>
+</html>
